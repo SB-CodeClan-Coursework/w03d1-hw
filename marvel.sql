@@ -17,7 +17,7 @@ INSERT INTO people (name) VALUES ('Andrew Gray');
 INSERT INTO people (name) VALUES ('Andrew Kirkwood');
 INSERT INTO people (name) VALUES ('Andrew Wyper');
 INSERT INTO people (name) VALUES ('Catherine Hall');
-INSERT INTO people (name) VALUES ('Cosy Abott');
+INSERT INTO people (name) VALUES ('Cody Abott');
 INSERT INTO people (name) VALUES ('Evan Smith');
 INSERT INTO people (name) VALUES ('Gary Clark');
 INSERT INTO people (name) VALUES ('James Fraser');
@@ -54,3 +54,9 @@ INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2',
 INSERT INTO movies (title, year, show_time) VALUES ('Spider-Man: Homecoming', 2017, '13:50');
 INSERT INTO movies (title, year, show_time) VALUES ('Thor: Ragnarok', 2017, '21:50');
 INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '19:30');
+
+SELECT * FROM movies;
+
+SELECT name FROM people;
+
+SELECT name FROM people WHERE name = 'Olivia Wright';
