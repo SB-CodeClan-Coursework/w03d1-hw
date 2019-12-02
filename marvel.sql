@@ -57,15 +57,13 @@ INSERT INTO movies (title, year, show_time) VALUES ('Thor: Ragnarok', 2017, '21:
 INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '19:30');
 INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '00:00');
 
-
-SELECT * FROM movies;
-
-SELECT name FROM people;
-
-SELECT name FROM people WHERE name = 'Olivia Wright';
+DELETE FROM movies WHERE id > 0 AND id < 6;
+DELETE FROM movies WHERE year > 2004 AND year < 2009;
+DELETE FROM movies WHERE title = 'Black Panther' OR title = 'Avengers: Infinity War';
 
 DELETE FROM movies where title = 'Batman Begins';
-
 DELETE FROM people where name = 'James Smith';
 
-DELETE FROM movies WHERE id > 1 AND id < 5;
+SELECT * FROM movies;
+SELECT name FROM people;
+SELECT name FROM people WHERE name = 'Olivia Wright';
