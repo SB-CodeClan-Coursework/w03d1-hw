@@ -34,6 +34,7 @@ INSERT INTO people (name) VALUES ('Sigurd Watt');
 INSERT INTO people (name) VALUES ('Silvia Simonassi');
 INSERT INTO people (name) VALUES ('Stephen Ramsay');
 INSERT INTO people (name) VALUES ('Steve Vance');
+INSERT INTO people (name) VALUES ('Chris Fraser');
 
 INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '18:10');
 INSERT INTO movies (title, year, show_time) VALUES ('The Incredible Hulk', 2008, '16:45');
@@ -41,7 +42,7 @@ INSERT INTO movies (title, year, show_time) VALUES ('Iron Man 2', 2010, '19:25')
 INSERT INTO movies (title, year, show_time) VALUES ('Thor', 2011, '14:55');
 INSERT INTO movies (title, year, show_time) VALUES ('Captain America: The First Avenger', 2011, '13:40');
 INSERT INTO movies (title, year, show_time) VALUES ('Avengers Assemble', 2012, '18:10');
-INSERT INTO movies (title, year, show_time) VALUES ('Iron Man 3', 2013, '18:30');
+INSERT INTO movies (title, year, show_time) VALUES ('Iron Man 3', 2013, '21:25');
 INSERT INTO movies (title, year, show_time) VALUES ('Thor: The Dark World', 2013, '16:50');
 INSERT INTO movies (title, year, show_time) VALUES ('Batman Begins', 2005, '21:25');
 INSERT INTO movies (title, year, show_time) VALUES ('Captain America: The Winter Soldier', 2014, '12:05');
@@ -54,9 +55,17 @@ INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2',
 INSERT INTO movies (title, year, show_time) VALUES ('Spider-Man: Homecoming', 2017, '13:50');
 INSERT INTO movies (title, year, show_time) VALUES ('Thor: Ragnarok', 2017, '21:50');
 INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '19:30');
+INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '00:00');
+
 
 SELECT * FROM movies;
 
 SELECT name FROM people;
 
 SELECT name FROM people WHERE name = 'Olivia Wright';
+
+DELETE FROM movies where title = 'Batman Begins';
+
+DELETE FROM people where name = 'James Smith';
+
+DELETE FROM movies WHERE id > 1 AND id < 5;
